@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+
+    <title>Harry Potter</title>
+  </head>
+  <body>
+    <div class="fundo-video">
+      <video class="video" autoplay loop muted>
+        <source src="src/video/harry-potter.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <header class="cabecalho">
+      <a href="#"
+        ><img
+          class="logo"
+          src="src/img/reliquias-da-morte.png"
+          alt="Simbolo das reliquias da morte"
+      /></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Details</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="informacoes">
+        <img
+          class="imagem-titulo"
+          src="src/img/title.png"
+          alt="Imagem do título"
+        />
+        <p class="descricao">
+          Pode se encontrar a felicidade mesmo nas horas mais sombrias, se a pessoa se lembrar de acender a luz.
+        </p>
+        <button class="botao-trailer">Veja o trailer</button>
+      </div>
+      <img
+        class="harry"
+        src="src/img/hogwarts-legacy-harry-potter-removebg-preview.png"
+        alt="Imagem de Hogwarts"
+      />
+
+      <div class="modal">
+        <div class="conteudo-modal">
+          <span class="fechar-modal">X</span>
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            src="src/video/harry-potter.mp4"
+            title="Preview"
+            frameborder="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            muted
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="src/js/index.js"></script>
+  </body>
+</html>
